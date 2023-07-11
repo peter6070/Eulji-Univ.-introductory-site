@@ -4,3 +4,35 @@ h1{
 button{
 text-decoration: none;
 }
+
+nav > ul{
+    overflow: hidden;
+    text-align: center;
+}
+nav > ul > li{
+    float: left;
+    width: 138px;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+}
+li> a{
+    text-decoration: none;
+}
+div{
+    margin: 5px;
+      padding: 5px;
+      border: 1px solid #cccccc;
+      
+      text-align: center;
+}
+.content{
+    margin: 0 auto;
+}
+header{
+    background: black;
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+}
