@@ -5,29 +5,31 @@ button{
 text-decoration: none;
 }
 
+
 nav > ul{
     overflow: hidden;
-    text-align: center;
+
 }
 nav > ul > li{
-    float: left;
+    /* float: left;
     width: 138px;
-    height: 40px;
+    height: 40px; */
+    display: inline-block;
     list-style: none;
     text-align: center;
-    line-height: 40px;
+    line-height: 20px;
+    padding-right: 15%
 }
 li> a{
     text-decoration: none;
 }
 div{
     margin: 5px;
-      padding: 5px;
-      border: 1px solid #cccccc;
-      
-      text-align: center;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    text-align: center;
 }
-.content{
+.all{
     margin: 0 auto;
 }
 header{
