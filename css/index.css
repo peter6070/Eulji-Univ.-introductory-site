@@ -3,12 +3,12 @@ html{
 }
 
 body{
-    background: rgb(0, 153, 255);
+    background: linear-gradient(to bottom, rgb(0, 128, 255), rgb(0, 255, 128));
 }
 header{
     background: white;
     color: white;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     padding-left: 20px;
     border: 1px solid #cccccc;
