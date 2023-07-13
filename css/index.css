@@ -1,40 +1,104 @@
-h1{
-    color: lightgray;
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background: rgb(0, 153, 255);
+}
+header{
+    background: white;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+#main > div{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: white;
+}
+header > div{
+    float: left;
+    position: absolute;
+    vertical-align: middle;
+    border: none;
+}
+#title{
+    color: rgb(0, 31, 145);
 }
 button{
-text-decoration: none;
+    text-decoration: none;
 }
 
+#side-menu{
+    z-index: 100;
+    position: absolute;
+    right: 27px;
+    top: 50%;
+    height: 250px;
+    margin-top: -190px;
+    margin-right: 10px;
+    position: fixed;
+    text-align: left;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    background: white;
+}
 
-nav > ul{
+#side-menu > ul{
     overflow: hidden;
-
 }
-nav > ul > li{
-    /* float: left;
-    width: 138px;
-    height: 40px; */
-    display: inline-block;
-    list-style: none;
-    text-align: center;
-    line-height: 20px;
-    padding-right: 15%
+#side-menu > ul > li{
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: relative;
 }
-li> a{
+#side-menu > ul> li > a{
     text-decoration: none;
 }
 div{
     margin: 5px;
     padding: 5px;
-    border: 1px solid #cccccc;
     text-align: center;
 }
-.all{
+.content{
     margin: 0 auto;
 }
-header{
-    background: black;
-    color: white;
-    padding: 5px;
-    padding-left: 20px;
+#intro-univ{
+    height: 80vh;
+}
+#univ-schedule{
+    height: 100vh;
+}
+.btns {
+    display: flex;
+    position: fixed;
+    right: .4rem;
+    bottom: .4rem;
+}
+
+.btns>div {
+    padding: .6rem 1.5rem;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s;
+    color: #fff;
+    margin-right: .4rem;
+}
+
+.moveTopBtn:hover {
+    color: #000;
+    background: #febf00;
+}
+.moveBottomBtn:hover {
+    color: #000;
+    background: #febf00;
 }
