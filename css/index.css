@@ -1,6 +1,5 @@
 html{
     scroll-behavior: smooth;
-    
 }
 
 body{
@@ -59,19 +58,17 @@ button{
 }
 #side-menu > ul> li > a{
     text-decoration: none;
+    color: rgb(0, 31, 145);
 }
 div{
     margin: 5px;
     padding: 5px;
     text-align: center;
 }
-.content{
+#content{
     margin: 0 auto;
 }
-#intro-univ{
-    height: 80vh;
-}
-#univ-schedule{
+#main > div{
     height: 100vh;
 }
 .btns {

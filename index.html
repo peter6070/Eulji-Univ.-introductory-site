@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is Eulji</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <div class="content">
+    <div id="content">
       <header>
         <div>
           <a href="https://www.eulji.ac.kr/"
@@ -21,20 +23,32 @@
         <ul>
           <li><a href="#intro-univ">대학 소개</a></li>
           <li><a href="#univ-schedule">학사 일정</a></li>
-          <li><a href="">멋쟁이사자처럼</a></li>
-          <li><a href="">오시는 길</a></li>
+          <li><a href="#likelion">멋쟁이사자처럼</a></li>
+          <li><a href="#come-load">오시는 길</a></li>
         </ul>
       </nav>
 
       <div id="main">
-        <div id="intro-univ" name="intro-univ">
+        <div id="intro-univ" name="intro-univ" class="content">
           <h1>대학 소개</h1>
           <button onclick="Alert()">
             <img src="https://avatars.githubusercontent.com/u/97502163?v=4" />
           </button>
         </div>
-        <div id="univ-schedule" name="univ-schedule">
+        <div id="univ-schedule" name="univ-schedule" class="content">
           <h1>학사 일정</h1>
+          <button onclick="Alert()">
+            <img src="https://avatars.githubusercontent.com/u/97502163?v=4" />
+          </button>
+        </div>
+        <div id="likelion" name="likelion" class="content">
+          <h1>멋쟁이사자처럼</h1>
+          <button onclick="Alert()">
+            <img src="https://avatars.githubusercontent.com/u/97502163?v=4" />
+          </button>
+        </div>
+        <div id="come-load" name="come-load" class="content">
+          <h1>오시는 길</h1>
           <button onclick="Alert()">
             <img src="https://avatars.githubusercontent.com/u/97502163?v=4" />
           </button>
@@ -45,6 +59,10 @@
       <div class="moveTopBtn">맨 위로</div>
       <div class="moveBottomBtn">맨 아래로</div>
     </div>
+
     <script src="./js/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
