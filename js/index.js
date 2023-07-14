@@ -69,3 +69,21 @@ $(window).on("wheel", function (e) {
   if (page == 0) $html.animate({ scrollTop: 0 }); //계산한 위치로 이동
   else $html.animate({ scrollTop: posTop }); //계산한 위치로 이동
 });
+
+//외부 html include 코드
+window.addEventListener("load", function () {
+  var allElements = document.getElementsByTagName("*");
+  Array.prototype.forEach.call(allElements, function (el) {
+    var includePath = el.dataset.includePath;
+    if (includePath) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          el.outerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", includePath, true);
+      xhttp.send();
+    }
+  });
+});

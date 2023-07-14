@@ -8,9 +8,8 @@ body{
 header{
     background: white;
     color: white;
-    margin: 15px;
+    margin: 10px;
     padding: 5px;
-    padding-left: 20px;
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
@@ -35,8 +34,8 @@ button{
 #side-menu{
     z-index: 100;
     position: absolute;
-    right: 27px;
-    top: 50%;
+    right: 20px;
+    bottom: 10%;
     height: 250px;
     margin-top: -190px;
     margin-right: 10px;
@@ -45,6 +44,10 @@ button{
     border: 2px solid lightgray;
     border-radius: 15px;
     background: white;
+    opacity: 0.5;
+}
+#side-menu:hover{
+opacity: 1;
 }
 
 #side-menu > ul{

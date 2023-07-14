@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>오는 길 안내</title>
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background-color: #eee;
+      }
+      #road-wrapper {
+        margin: 0 auto;
+        background-color: white;
+      }
+      #road-html-header {
+        background-color: #000000;
+        color: white;
+        text-align: center;
+      }
+      #road-html-header > h1 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: c enter;
+      }
+      .directions-section {
+        position: relative;
+        /* padding: 2rem; */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: #f2f2f2;
+        color: #000000;
+        overflow: hidden;
+      }
+      .directions-section h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 24px;
+      }
+      .directions-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("https://images.unsplash.com/photo-1531211373159-9a2876f15db4");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.1;
+        z-index: -1;
+      }
+      #road-wrapper > ul {
+        font-size: 18px;
+        margin: 0;
+        padding-left: 2rem;
+      }
+      #road-wrapper ul li {
+        list-style-type: none;
+        height: 2.5rem;
+      }
+      #road-wrapper ul li::before {
+        content: "↠";
+        width: 1.5rem;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="road-wrapper">
+      <header id="road-html-header">
+        <h1>오는 길 안내</h1>
+      </header>
+
+      <section class="directions-section">
+        <h2>차량 이용 시 내비게이션 주소</h2>
+        <ul>
+          <li>경기도 성남시 수정구 산성대로 553(양지동 212)</li>
+        </ul>
+      </section>
+
+      <section class="directions-section">
+        <h2>지하철 이용 시 가장 가까운 역 및 도보 소요 시간</h2>
+        <ul>
+          <li>남한산성역에서 도보 24분</li>
+          <li>
+            지하철 역 주변 버스 정류장에서 452, 720-1A, 30, 240, 51, 6, 33-1,
+            55, 10, 333, 10-1, 10-2, 반디2번 승차
+          </li>
+        </ul>
+      </section>
+
+      <section class="directions-section">
+        <h2>버스 이용 시 가장 가까운 정류장 및 도보 소요 시간</h2>
+        <ul>
+          <li>을지대학교</li>
+          <li>을지대학교 생활관</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
